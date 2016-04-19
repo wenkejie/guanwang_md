@@ -1,0 +1,41 @@
+// ========================================
+// ============= 选项卡结构 ===============
+// ========================================
+.gui-tab{
+
+}
+.gui-tab-fix{
+	position: relative;
+}
+.gui-tab-wrap{
+	border-bottom: 1px solid #dedfde;
+	background-color:#f9f8f6;
+}
+.gui-tab-border{
+	position: absolute;
+	top:42px;
+	left: 0;
+	transition: 0.3s;
+	width: 135px;
+	height: 0;
+	border-bottom:2px solid  #0084e4;
+}
+.gui-tab-cell{
+	display: inline-block;
+	text-align: center;
+	width: 236px;
+	height: 43px;
+	line-height: 43px;
+	color: #999;
+	background-color: #f9f9f6;
+	cursor: pointer;
+	& + .gui-tab-cell{
+		margin-left: -1px;
+	}
+	&:hover{
+		color:  #0084e4;
+	}
+}
+.gui-tab-cell-active{
+	color: #0084e4;
+}

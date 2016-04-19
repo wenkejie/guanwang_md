@@ -1,0 +1,17 @@
+
+<!-- 
+<div class="rg-input input-padding"  >
+    
+
+</div> 
+-->
+<div class="select-box select-box-source">
+	<div class="select-title select-title-source">
+	    <input type="hidden"  ms-attr-name="{{inputName}}" ms-duplex="curSource.id">
+	    <input type="text" readonly="readonly" ms-duplex="curSource.name">
+	    <button type="button" class="select-arrow" ms-click="toggle()"><i class="iconfont">&#xe608;</i></button>
+	</div>
+	<ul class="select-option" ms-visible="_toggle">
+	    <li ms-repeat="sourceOptions" ms-click="choose(el)" ms-text="el.name"></li>
+	</ul>
+</div>

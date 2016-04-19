@@ -1,0 +1,8 @@
+{
+	"ctx":"/shopkeeper-gw-rest",
+	"modulus":"d6b3d51c71ad46e493aa1301326bcc9664bf30df13528cf4c7dd0e473863fd1cc52e4c038133b20b47d21c193658bf9eedda58df442f99c39351c10f117464ab9dad50d4d3500177dd6a217",
+    	"publicExponent": "010001",
+    	"username": "justin",
+    	"step": 2,
+    	"password": "082c52f9e72ac637750d7a4746b2b038fe4eabf53a2d31978f6257e52491639c79efc588e1a2a18ce13ba864188baa80cfbcb1a82b474a7e8794bc1665da4018e27bcf01783202dc27fa91b0"
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>清单</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="ClearType" content="true">
+	<!-- 样式引入 -->
+	<!-- <link rel="stylesheet" type="text/css" href="static/less/style.less"> -->
+	<link rel="stylesheet" type="text/css" href="/static/less/global.less">
+	<link rel="stylesheet" type="text/css" href="./pay.less">
+	<link rel="stylesheet" type="text/css" href="./pay-1.less">
+
+	<script type="text/javascript" src="/static/js/require.js"></script>
+	<!-- 样式 end -->
+</head>
+<body>
+	<link rel="import" href="/widget/header/header.html?__inline">
+	<div class="page">
+		<div class="page-container">
+			<div class="gui-panel" ms-controller="demo1">
+				<h3 class="pay-title">产品名称</h3>
+				<ul class="pay-progress">
+					<li class="pay-progress-cell">确认订单</li>
+					<li class="pay-progress-cell">支付</li>
+					<li class="pay-progress-cell">支付成功</li>
+				</ul>
+				<div class="pay-grid pay-grid-confirm">
+					<div class="pay-form-area pay-form-area1">
+						<p class="color9"><i class="iconfont">&#xe612;</i>&nbsp;距离二维码过期还剩<a>1</a>小时<a>40</a>分<a>30</a>秒，过期后请刷新页面重新获取二维码</p>
+						<p class="skin-color-red"><i class="iconfont">&#xe612;</i>&nbsp;二维码已过期，<a>刷新</a>页面获取二维码</p>
+					</div>
+					<!--二维码图片模块-->
+					<div class="m-code-wrap">
+						<div class="m-code tac">
+							<p class="">扫一扫付款（元）</p>
+							<p class="pay-total-num bold">1500.00</p>
+							<div class="u-code-img-wrap mt10">
+								<img src="./../../static/img/er1.png" class="u-code-img" />
+								<img src="./../../static/img/weixin-logo.png"  class="weixin-logo"/>
+							</div>
+							<img src="./../../static/img/scan.png"  class="u-code-footer-img"/>
+						</div>
+						<img src="./../../static/img/code-tips.png" class="code-tips" />
+						<p class="u-pay-other-tips"><a href="javascript:"><i class="iconfont">&#xe617;</i>使用其他的支付方式</a></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="import" href="/widget/footer/footer.html?__inline">
+	
+	<script type="text/javascript">
+	   
+	    	require(["./pay"])
+	    
+	</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>demo</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="ClearType" content="true">
+	<!-- 样式引入 -->
+	<link rel="stylesheet" type="text/css" href="/static/less/global.less">
+	<link rel="stylesheet" type="text/css" href="./product.less">
+	<!-- 样式 end -->
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+	<link rel="import" href="/widget/header/header.html?__inline">
+	<div class="page">
+		<img src="/static/img/story-bg.png" class="product-bg">	
+		<div class="page-container">
+			<div class="page-s-container">
+				<a href="javascript:void(0)" class="page-headline">产品中心/Products</a>
+				<div class="gui-panel product-O2O-container">
+					<h1 class="product-title">O2O国际物流平台</h1>
+					<p>国际物流企业依托该平台，通过领先的云计算平台技术，充分发挥互联网的优势，</p>
+					<p>将企业的产品互联网化、营销互联网化、服务互联网化、渠道互联网化、运营互联网化，</p>
+					<p>提升企业对外服务能力和竞争力，在新商业文明中建立起自己的品牌和企业资信，编织</p>
+					<p>自己的全球网络，随时、随地、随意做生意、管生意。</p>
+					<a href="javascript:" class="product-btn">免费体验</a>
+				</div>
+			</div>
+			<div class="page-s-container">
+				<ul class="gui-tab-wrap">
+					<li class="gui-tab-cell gui-tab-cell-active">产品优势</li><li class="gui-tab-cell">产品功能</li><li class="gui-tab-cell">经典案例</li>
+				</ul>
+				<div class="product-intro-container">
+					<div class="product-intro-wrap product-intro-wrap-active">
+						<div class="product-img">1</div>
+					</div>
+					<div class="product-intro-wrap" >
+						<div class="product-img">2</div>
+					</div>
+					<div  class="product-intro-wrap">
+						<div class="product-img">3</div>
+					</div>	
+				</div>
+			</div>
+			<div class="product-btn-wrap">
+				<a href="javascript:" class="product-btn product-btn-last">免费体验</a>
+			</div>
+		</div>
+	</div>
+	<link rel="import" href="/widget/footer/footer.html?__inline">
+</body>
+<script>
+$('.gui-tab-wrap li').click(function(){
+		var _index = $(this).index();
+		// console.log(index);
+		$(this).addClass('gui-tab-cell-active').siblings().removeClass('gui-tab-cell-active');
+		$('.product-intro-wrap:eq('+_index+')').show().siblings().hide();	
+	})
+</script>
+</html>

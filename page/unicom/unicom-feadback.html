@@ -1,0 +1,47 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>demo</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="ClearType" content="true">
+	<!-- 样式引入 -->
+	<!-- <link rel="stylesheet" type="text/css" href="static/less/style.less"> -->
+	<link rel="stylesheet" type="text/css" href="/static/less/global.less">
+	<link rel="stylesheet" type="text/css" href="./unicom.less">
+
+	<script type="text/javascript" src="/static/js/require.js"></script>
+	<!-- 样式 end -->
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+	<link rel="import" href="/widget/header/header.html?__inline">
+	<div class="page">
+		<div class="page-container"  ms-controller="IndexCtrl">
+			<div class="page-title"><div class="page-title-cnt"><span class="page-info">掌门人申请</span></div></div>
+		   <div class="unicom-form-grid feadback-grid">
+		   		<div class="unicom-feadback">
+		   			<i class="iconfont">&#xe60f;</i>
+		   			<div class="unicom-feadback-cnt">
+		   				<h3>提交成功，正在审核...</h3>
+		   				<p>我的小二会以<span class="contact-info">电话的方式</span>将审核结果通知到掌门人</p>
+		   			</div>
+		   		</div>
+		   </div>
+		</div>
+	</div>
+
+	<link rel="import" href="/widget/footer/footer.html?__inline">
+	
+	<script type="text/javascript">
+	   
+	    	require(["./unicom"])
+	    	$('#jump-btn').click(function(){
+    			
+    
+	    })
+	    
+	</script>
+</body>
+</html>

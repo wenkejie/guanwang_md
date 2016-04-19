@@ -1,0 +1,95 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>支付</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="ClearType" content="true">
+	<!-- 样式引入 -->
+	<link rel="stylesheet" type="text/css" href="/static/less/global.less">
+	<link rel="stylesheet" type="text/css" href="./pay.less">
+	<link rel="stylesheet" type="text/css" href="./pay-1.less">
+
+	<script type="text/javascript" src="/static/js/require.js"></script>
+	<!-- 样式 end -->
+</head>
+<body>
+	<link rel="import" href="/widget/header/header.html?__inline">
+	<div class="page">
+		<div class="page-container">
+			<div class="gui-panel">
+				<h3 class="pay-title">支付</h3>
+				<ul class="pay-progress progress-sec">
+					<li class="pay-progress-cell">确认订单</li>
+					<li class="pay-progress-cell">支付</li>
+					<li class="pay-progress-cell">支付成功</li>
+				</ul>
+				<div class="order-table-area order-table-area1">
+					<table class="gui-table m-order-table">
+						<thead>
+							<th width="150" style="border-right: none;">订单编码</th>
+							<th width="250">配置内容</th>
+							<th width="100">数量</th>
+							<th width="120">开始时间</th>
+							<th width="120">结束时间</th>
+							<th>备注</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="2" style="border-right: 1px solid #a1cff1;">161067578082615</td>
+								<td>掌柜互联-海运整箱</td>
+								<td><span class="price">3</span> 家</td>
+								<td>2016-01-30</td>
+								<td>2016-02-30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>掌柜互联-海运整箱</td>
+								<td><span class="price">3</span> 家</td>
+								<td>2016-01-30</td>
+								<td>2016-02-30</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="pay-mode-list">
+					<h3 class="mode-list-header">请选择支付类型</h3>
+					<div class="pay-mode-item mode-item-break">
+						<div class="mode-item-header m-item-header">
+							<h4>快捷支付&nbsp;&nbsp;<i class="iconfont">&#xe60b;</i></h4>
+						</div>
+						<div class="mode-item-cnt">
+							<ul class="pay-card-list m-card-list">
+								<li class="pay-card-cell pay-card-current"></li>
+								<li class="pay-card-cell pay-card-cell1"></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="pay-form-extend tal mt30 mb10">
+					<div class="pay-total">
+						<div>
+							<label>订单金额:</label>
+							<span class="u-currency">￥</span><span class="pay-total-num">1500.00</span>
+						</div>
+					</div>
+				</div>
+				<div class="pay-grid pay-grid-submit mt10 mb80 tal">
+					<button class="gui-btn gui-btn-submit">确认付款</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="import" href="/widget/footer/footer.html?__inline">
+	
+	<script type="text/javascript">
+	   
+	    	require(["./pay"])
+	    
+	</script>
+</body>
+</html>

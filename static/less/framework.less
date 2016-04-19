@@ -1,0 +1,125 @@
+// ================================
+// ============ 主体框架 ===========
+// ================================
+
+
+// 文字图标配置
+.iconfontset();
+
+// ================================
+// ============ 主体 ==============
+// ================================
+*{
+	//box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  line-height: 1.5;
+}
+
+a{
+	color: #5290c7;
+}
+
+label{
+	cursor: default;
+}
+
+// ==================================
+
+
+// 框架面板
+// 
+.page-title{
+	background-color: #ebebeb;
+	height: 64px;line-height: 64px;
+}
+
+.page-title-cnt{
+	width: 998px;
+	margin: 0 auto;
+}
+
+.page-info{
+	display: inline-block;*display: inline;
+	height: 24px;line-height: 24px;
+	border-left: 3px solid #224e70;padding-left: 20px;
+	color: #224e70;font-size: 22px;font-weight: bold;
+}
+
+// ========== 表单结构 ==============
+.form-line{
+	padding: 10px 0;
+}
+
+
+.form-line-cnt{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.gui-input{
+	display: inline-block;
+	border: 1px solid #c6c6c6;
+	height: 28px;padding: 0 6px;width: 50px;
+	background-color: #fff;
+	// overflow: hidden;
+	vertical-align: middle;
+	input{
+		width: 100%;height: 100%;
+		vertical-align: middle;
+		border: none;
+	}
+}
+
+
+.gui-input-data{
+	padding: 0;
+	.oni-datepicker-input-wrapper{
+		width: 100%;height: 26px;
+		border: none;
+		input{
+			padding-right: 50px;
+		}
+	}
+}
+
+// .gui-input-mini{
+// 	input{
+// 		height: 20px;
+// 	}
+// }
+
+
+.gui-label{
+	display: inline-block;
+	width: 85px;
+	vertical-align: middle;
+	text-align: right;
+	&.vat{
+		vertical-align: top;
+	}
+}
+
+.gui-checkbox{
+	display: inline-block;*display: inline;
+	margin-right: 25px;
+	input{
+		width: 13px;
+		margin-right: 5px;padding: 0;vertical-align: middle;
+	}
+}
+
+.gui-textarea{
+	display: inline-block;*display: inline;
+	padding: 0 5px;
+	border: 1px solid #c6c6c6;
+	textarea{
+		width: 100%;padding: 5px 0;
+		background-color: transparent;border: none;
+		resize:none;
+	}
+}
+
+// ============== end ===============

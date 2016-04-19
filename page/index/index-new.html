@@ -1,0 +1,64 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>demo</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="ClearType" content="true">
+	<!-- 样式引入 -->
+	<!-- <link rel="stylesheet" type="text/css" href="static/less/style.less"> -->
+	<link rel="stylesheet" type="text/css" href="/static/less/global.less">
+	<link rel="stylesheet" type="text/css" href="./index-new.less">
+
+	<script type="text/javascript" src="/static/js/require.js"></script>
+	<!-- 样式 end -->
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	
+</head>
+<body>
+	
+	<div class="page">
+		<div class="page-container"  ms-controller="IndexCtrl">
+			<div class="bg-cnt">
+				<link rel="import" href="/widget/header/header_index.html?__inline">
+			    <div class="bg-img-wrap">
+			    	<img src="/static/img/index-bottom-img.png" class="bg-img">		
+			    </div>
+			    <div class="bg-text-wrap">
+				    <div class="bg-text">
+				    	<div class="bg-text-img"></div>
+						<div class="bg-text-options">
+							<a class="gui-btn gui-btn-download" href="javascript:"></a>
+						</div>
+						<p class="other-info">更有超多掌柜工具，下载掌柜通<span>免费体验</span></p>
+				    </div>
+				</div>
+				     	
+		    </div>
+		</div>
+	</div>
+
+	<div class="gui-jump none">
+		<a href="javascript" class="gui-jump-btn"> <i class="iconfont gui-jump-img">&#xe607;</i>
+			<span>在线客服</span>
+		</a>
+		<a href="javascript:" class="gui-jump-btn" id="jump-btn">
+			<span class="gui-jump-top">TOP</span>
+			<span>返回顶部</span>
+		</a>
+	</div>
+	<div class="player-area none">
+		<div id="video1" class="player-area-cnt"></div>
+		<div class="player-shadow"></div>
+	</div>
+
+	<link rel="import" href="/widget/footer/footer-new.html?__inline">
+	
+	<script type="text/javascript">
+	
+	    	require(["./index"])
+		
+	</script>
+</body>
+</html>

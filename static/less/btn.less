@@ -1,0 +1,114 @@
+// ========================================
+// ============= 按钮组件 ==================
+// ========================================
+
+.gui-btn{
+	display: inline-block;*display: inline;*zoom:1;
+	padding: 0 15px;height: 24px;line-height: 24px;
+	border: 1px solid #bbb;border-radius: 2px;
+	background: #fff;color: #6c6c6c;
+	text-align: center;vertical-align: middle;cursor: pointer;font-size: 12px;
+
+}
+
+.gui-btn-big{
+	height: 34px;line-height: 34px;padding: 0 30px;
+	font-size: 14px;
+}
+
+.gui-btn-calculate{
+	background: #968C78;border-radius: 3px;border: none;
+	color: #fff;
+	&:hover{
+		background: darken(#968C78,10%);
+	}
+}
+
+
+.gui-btn-primary{
+	background: #0084e3;border-color: #0084e3;border-radius: 2px;
+	color: #fff;
+	&:hover{
+		background: #009fe3;
+		color: #fff;
+	}
+}
+
+.gui-btn-order{
+	background: #F1630C;border-color: #ec7728;border-radius: 2px;
+	color: #fff;
+	// box-shadow: 0 1px 2px #c25812;
+	&:hover{
+		background: #E45F0E;
+		color: #fff;
+	}
+}
+
+.gui-btn-disable{
+	cursor: not-allowed;
+	background: #eee;border-color: #ccc;box-shadow: none;
+	color: #aaa;
+	&:hover{
+		background: #eee;
+		color: #aaa;
+	}
+}
+
+// .gui-btn-download{
+// 	width: 268px;height: 57px;
+// 	background-color: transparent;border: none;
+// 	// line-height: 55px;
+// 	// border-radius: 30px;
+// 	// background-color: #FFE25F;
+// 	// font-size: 28px;
+// 	background-image: url(../img/download-btn-bg.png);
+// }
+
+.gui-btn-more{
+	margin-left: 10px;
+	text-decoration: underline;
+	color: #fff;
+}
+
+.gui-btn-index{
+	width: 200px;height: 48px;
+	line-height: 48px;
+	border-radius: 29px;
+	font-size: 18px;color: #fff;
+  transition: all .5s ease;
+}
+
+.gui-btn-dload{
+	background-color: #0080C8;
+	border-color: #0080C8;
+
+  &:hover{
+	background-color: lighten( #0080C8,5%);
+	border-color: lighten( #0080C8,5%);
+  }
+}
+
+.gui-btn-rgs{
+	margin-left: 20px;
+	background-color: transparent;
+	border-color: #fff;
+  border-color: rgba(255, 255,255, .5);
+  color: rgba(255, 255,255, .8);
+
+  &:hover{
+	border-color: #fff;
+	color: #ffffff;
+	background-color: rgba(255, 255,255, .05);
+  }
+}
+
+
+// 新手上路中的注册 引导按钮
+.gui-btn-guide{
+	width: 246px;height: 69px;line-height: 69px;
+	border: none;
+	margin-top: 65px;
+	background-color: #00A7F7;
+	font-size: 26px;
+	color: #fff;
+}

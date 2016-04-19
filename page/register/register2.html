@@ -1,0 +1,198 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+    <title>demo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="ClearType" content="true">
+    <!-- 样式引入 -->
+    <!-- // <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="./register.less">
+    <link rel="stylesheet" type="text/css" href="static/lib/webuploader/webuploader.css">
+
+    <script type="text/javascript" src="/static/js/require.js"></script>
+    <!-- 样式 end -->
+</head>
+<body>
+    <link rel="import" href="widget/header/header_rg.html?__inline">
+    <div class="rg-body" ms-controller="registerCtrl">
+        <div class="rg-body-cnt">
+            <div class="basic-title-contaner">
+                <h1 class="basic-title">恭喜您注册成功</h1>
+                <p class="basic-tip">为了您更精准的服务，我们建议您立即完善以下信息，我们会保障您的信息安全！</p>
+            </div> 
+            <div class="rg-form basic-form">   
+                <div class="rg-tips rg-tips-top rg-tips-error">
+                    <span class="rg-tips-icon"></span>
+                    <p class="rg-tips-info">邮箱格式不正确，请重新输入</p>
+                </div>
+                <div class="rg-form-line form-line-first">
+                    <label class="information-label">公司名称</label> 
+                    <div class="rg-input input-padding">
+                        <input class="rg-input-enter input-radius" type="text" placeholder=""/>
+                    </div>
+                </div>
+                <div class="rg-form-line">
+                    <label class="information-label"><span class="information-label-notice">*</span>联系人</label> 
+                    <div class="rg-input input-padding">  
+                        <input class="rg-input-enter input-radius" type="text" placeholder=""/>
+                    </div>
+                    <div class="rg-tips rg-tips-error">
+                        <span class="rg-tips-icon"></span>
+                        <p class="rg-tips-info">XXXX不正确，请重新输入</p>
+                    </div>
+                </div>
+                <div class="rg-form-line">
+                    <label class="information-label"><span class="information-label-notice">*</span>手机号</label> 
+                    <div class="rg-input input-padding">  
+                        <input class="rg-input-enter input-radius" type="text" placeholder=""/>
+                    </div>
+                    <div class="rg-tips rg-tips-error">
+                        <span class="rg-tips-icon"></span>
+                        <p class="rg-tips-info">手机号码已被注册，请更换，或<a href="page/login/login.html">立即登录</a></p>
+                    </div>
+                </div>
+                <div class="rg-form-line">
+                    <label class="information-label">固定电话</label> 
+                    <div class="rg-input input-padding">
+                        <input class="rg-input-enter input-radius" type="text" placeholder=""/>
+                    </div>
+                </div>
+                <div class="rg-form-line">
+                    <label class="information-label">企业邮箱</label> 
+                    <div class="rg-input input-padding">
+                        <input class="rg-input-enter input-radius" type="text" placeholder=""/>
+                    </div>
+                    <div class="rg-tips rg-tips-error">
+                        <span class="rg-tips-icon"></span>
+                        <p class="rg-tips-info">邮箱格式不正确，请重新输入</p>
+                    </div>
+                </div>
+                <div class="rg-form-line">
+                    <label class="information-label">地区</label> 
+                    <div class="rg-input input-padding">
+                        <div class="select-box">
+                            <div class="select-title" data-value="">
+                                <input placeholder="省">
+                                <button type="button" class="select-arrow"><i class="iconfont">&#xe608;</i></button>
+                            </div>
+                            <ul class="select-option">
+                                <li>浙江省浙江省浙江省浙江省浙江省浙江省</li>
+                                <li>上海市</li>
+                                <li>江苏省</li>       
+                                <li>江苏省</li>
+                                <li>江苏省</li>
+                                <li>江苏省</li>       
+                                <li>江苏省</li>
+                                <li>江苏省</li>
+                            </ul>
+                        </div>
+                        <div class="select-box select-box-mid">
+                            <div class="select-title" data-value="">
+                                <input placeholder="市">
+                                <button type="button" class="select-arrow"><i class="iconfont">&#xe608;</i></button>
+                            </div>
+                            <ul class="select-option">
+                                <li>杭州市</li>
+                                <li>宁波市</li>
+                                <li>温州市</li>
+                                <li>杭州市</li>
+                                <li>宁波市</li>
+                                <li>温州市</li>
+                                <li>杭州市</li>
+                                <li>宁波市</li>
+                                <li>温州市</li>
+                            </ul>    
+                            </div>   
+                        <div class="select-box">
+                            <div class="select-title">
+                                <input placeholder="区">
+                                <button type="button" class="select-arrow"><i class="iconfont">&#xe608;</i></button>   
+                            </div>    
+                            <ul class="select-option">
+                                <li>海曙区</li>
+                                <li>江东区</li>
+                                <li>鄞州区</li>
+                            </ul> 
+                        </div>   
+                    </div>
+                </div>
+                <div class="rg-form-line">
+                    <label class="information-label">公司地址</label> 
+                    <div class="rg-input input-padding">
+                        <input class="rg-input-enter input-radius" type="text" placeholder=""/>
+                    </div>
+                </div>
+                <div class="rg-form-line">
+                    <label class="information-label">业务类型</label> 
+                    <div class="rg-input input-padding">
+                        <label><span class="checkbox-btn"><input name="business" type="checkbox" value="" /></span>海运出口整箱</label>
+                        <label class="checkbox-label"><span class="checkbox-btn"><input name="business" type="checkbox" value="" /></span>海运出口拼箱</label>
+                        <label><span class="checkbox-btn"><input name="business" type="checkbox" value="" /></span>空运</label>
+                    </div>
+                </div>
+                <div class="rg-form-line">
+                    <label class="information-label">公司规模</label> 
+                    <div class="rg-input input-padding">
+                        <input class="rg-input-enter input-radius" type="text" placeholder=""/>
+                    </div>
+                </div>
+                <div class="rg-form-line">
+                    <label class="information-label">公司网站</label> 
+                    <div class="rg-input input-padding">
+                        <input class="rg-input-enter input-radius" type="text" placeholder=""/>
+                    </div>
+                </div>
+                <div class="rg-form-line">
+                    <label class="information-label">信息来源</label> 
+                    <div class="rg-input input-padding">
+                    <div class="select-box select-box-source">
+                        <div class="select-title select-title-source">
+                            <input value="">
+                            <button type="button" class="select-arrow"><i class="iconfont">&#xe608;</i></button>
+                        </div>
+                        <ul class="select-option">
+                            <li>同行</li>
+                            <li>XXXXXXXXXXXXXXXXXX</li>
+                            <li>XXX</li>
+                            <li>XXX</li> 
+                            <li>XXX</li>
+                            <li>XXX</li>
+                            <li>XXX</li> 
+                            <li>XXX</li>
+                        </ul> 
+                    </div>
+                    </div>  
+                </div>
+                <div class="rg-form-line">
+                    <label class="information-label vat">营业执照</label> 
+                    <div class="rg-upload-area">
+                         <div id="filePicker">选择附件</div>
+                        <div class="upload-list" >
+                            <p class="upload-list-cell">
+                            <a ms-attr-href="fileUrl" >{{fileName}}</a>
+                            <a class="del" href="javascript:;"  ms-click="deleteFile()">删除</a>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="rg-form-line">
+                    <button class="rg-btn j-open btn-width">提交审核</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="import" href="widget/footer/footer_rg.html?__inline">
+    <!-- 插件及js应用 -->
+  
+    <script type="text/javascript">
+       
+            require(["./register"], function(r){
+                r.init();
+            })
+        
+    </script>
+    <!-- js end -->
+</body>
+</html>

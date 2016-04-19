@@ -1,0 +1,344 @@
+// =====================================================
+// ============== cargoGM官网掌柜社区页样式 =================
+// =====================================================
+
+// ================== 默认样式重置 ======================
+@import "/static/less/variables.less";
+@import "/static/less/cube.less";
+
+// ================== 字体图标引入 ======================
+@import "/static/less/font-icon.less";
+
+.iconfontset();
+// ======================= end =========================
+body{background-color: #f2f7f8;font-size: 14px;color: #999}
+.product-bg{
+	display: block;
+	width: 998px;
+	height: 275px;
+	margin: 0 auto;
+}
+.page-s-container{
+	width: 998px;
+	margin: 23px auto;
+	min-height: 350px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.page-headline{
+	display: block;
+	position: absolute;
+	margin-top: -77px;
+	width: 320px;
+	height: 54px;
+	line-height: 54px;
+	text-align: center;
+	background-color: #0084e4;
+	color: #fff;
+	font-size: 20px;
+}
+.community-panel{
+	padding:13px 16px 24px;
+}
+.community-title-input{
+	width: 918px;
+	height: 32px;
+	line-height: 32px;
+	color: #666;
+	border-radius: 1px; 
+	border:1px solid #ddd;
+	padding-left: 6px;
+	padding-right: 6px;
+	&:hover{
+		border-color: #666;
+	}
+}
+.community-form-line{
+	padding:15px 0;
+}
+.community-form-line label{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 32px;
+}
+.select-box{
+	position: relative;
+	display: inline-block;
+}
+.select-btn{
+	width: 122px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    &:hover{
+    	border-color: #666;
+    }
+}
+.select-btn input{
+	position: absolute;
+	top:1px;
+	padding-left: 8px;
+    height: 32px;
+    line-height: 32px;
+    width: 102px;
+    color: #666;
+    border: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.select-arrow{
+	position: absolute;
+    top: 1px;
+    right: 1px;
+    display: inline-block;
+    width: 17px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.select-option{
+	display: none;
+    position: absolute;
+    left: 0;
+	padding-left: 20px;
+    border: 1px solid #ddd;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 9999;
+    max-height: 152px;
+}
+.select-option li{
+	width: 100%;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	&:hover{
+    	color:#0082E4;
+    }
+}
+.community-textarea{
+	display: inline-block;
+	width: 918px;
+	height: 170px;
+	color: #666;
+	border-radius: 1px;
+	border:1px solid #ddd;
+	padding: 6px;
+	resize:none;
+	overflow-y: scroll;
+	&:hover{
+		border-color: #666;
+	}
+}
+.submit-btn{
+	border: none;
+	margin-left: 45px;
+	width: 89px;
+	height: 31px;
+	color: #fff;
+	background-color: #0084e4;
+}
+.submit-line{
+	padding-top: 10px;
+}
+// ========== 掌柜社区 ==========
+.community-wrap{
+	display: none;
+}
+.community-wrap-active{
+	display: block;
+}
+// 搜索栏
+.community-search-wrap{
+	border-bottom: 1px solid #eee;
+	padding:23px 16px 33px;
+}
+.community-search-wrap input{
+	display: inline-block;
+	vertical-align: top;
+	width: 256px;
+	height: 38px;
+	padding-left: 10px;
+	border: 1px solid #eee;
+	box-shadow: 0 0 3px #eee inset;
+	border-radius: 3px;
+	color:#666;
+}
+.community-search-btn{
+	margin-left: 11px;
+	width:79px;
+	height: 38px;
+	border: none;
+	border-radius: 3px;
+	color:#fff;
+	background-color: #0084e4;
+}
+.community-refresh-btn{
+	float: right;
+	width: 84px;
+	height: 35px;
+	border:none;
+	color: #fff;
+	background-color: #0084e4;
+}
+.community-refresh-btn i {
+	padding-right: 6px;
+}
+// 讨论栏
+.community-discuss-panel{
+	padding: 30px 0 20px;
+	border-bottom: 1px solid #eee;
+}
+.community-discuss-title-wrap{
+	display: inline-block;
+	padding-left: 16px;
+	color:#999;
+	width: 390px;
+	height: 50px;
+}
+.community-discuss-title-wrap a{
+	display: inline-block;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+.community-discuss-title{
+	width: 100%;
+	color:#333;
+}
+.discuss-date{
+	padding-left: 5px;
+}
+.community-discuss-kind{
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+	height: 50px;
+	padding-left: 10px;
+	line-height: 50px;
+}
+.community-discuss-num{
+	float: right;
+	padding-right: 16px;
+	height: 50px;
+	line-height: 50px;
+}
+// 翻页块
+.page-wrap{
+	text-align: right;
+	padding: 29px 16px 32px 0;
+}
+.page-btn{
+	display: inline-block;
+	padding:0 6px;
+	height: 26px;
+	line-height: 24px;
+	border:1px solid #ccc;
+	color: #8697B3;
+	font-weight: bold;
+	&:hover{
+		color:#4D7AFF;
+	}
+}
+.page-btn-now{
+	color: #fff;
+	background-color:#8B8B8B; 
+	border:1px solid #8B8B8B; 
+	&:hover{
+		color:#fff;
+	}
+}
+// ========== 话题详情 ==========
+// 容器
+.discuss-title-panel{
+	padding: 28px 14px 8px;
+	color: #333;
+	font-size: 16px;
+}
+.discuss-panel{
+	padding: 20px 14px;
+	overflow:hidden;
+}
+.discuss-panel-last{
+	padding-top: 10px;
+}
+.discuss-small-panel{
+	padding: 9px 17px 4px;
+	color:#999;
+}
+.discuss-comment-panel{
+	padding:15px 17px 13px;
+}
+// 容器边框
+.discuss-panel-border{
+	border-bottom: 1px solid #ECECEC;
+}
+.discuss-panel-border-all{
+	border: 1px solid #ECECEC;
+}
+.discuss-panel-border-esp{
+	border-top: none;
+}
+.discuss-text{
+	width: 100%;
+	color: #333;
+	min-height: 76px;
+}
+.discuss-num{
+	width: 100px;
+	padding-top:10px;
+}
+.discuss-panel>:first-child{
+	color: #333;
+}
+.discuss-panel .discuss-info{
+	font-size: 12px;
+	color: #999;
+}
+// 文本域
+.discuss-textarea{
+	clear: both;
+	width: 100%;
+	height: 170px;
+	padding:10px;
+	color: #333;
+	border: 1px solid #ccc;
+	overflow-y: scroll;
+	resize:none;
+}
+.discuss-textarea-reply{
+	width: 100%;
+}
+// 翻页按钮
+.discuss-page-wrap{
+	padding: 0;
+	padding-bottom: 14px;
+}
+.discuss-page-wrap-esp{
+	padding:0;
+}
+.page-small-btn{
+	height: 18px;
+	line-height: 16px;
+	padding:0 3px;
+	font-size: 12px;
+}
+.discuss-btn{
+	display: block;
+	width: 101px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: 12px;
+	border: none;
+	color: #fff;
+	background-color: #0084e4;
+}
+.discuss-btn-right{
+	float: right;
+}

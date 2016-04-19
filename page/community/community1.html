@@ -1,0 +1,80 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>demo</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="ClearType" content="true">
+	<!-- 样式引入 -->
+	<link rel="stylesheet" type="text/css" href="/static/less/global.less">
+	<link rel="stylesheet" type="text/css" href="./community.less">
+	<!-- 样式 end -->
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+	<link rel="import" href="/widget/header/header.html?__inline">
+	<div class="page">
+		<img src="/static/img/story-bg.png" class="product-bg">	
+		<div class="page-container">
+			<div class="page-s-container">
+				<a href="javascript:void(0)" class="page-headline">发布问题/Published issues</a>
+				<div class="gui-panel community-panel">
+					<div class="community-form-line">
+						<label>标题：</label>
+						<input class="community-title-input" type="text" placeholder=""/>
+					</div>
+					<div class="community-form-line">
+						<label>模块：</label>
+						<div class="select-box">
+							<div class="select-btn" data-value="">
+								<input placeholder="">					
+								<button type="button" class="select-arrow"> <i class="iconfont">&#xe608;</i>
+								</button>
+							</div>
+							<ul class="select-option">
+								<li>模块1</li>
+								<li>模块2模块2模块2模块2模块2</li>
+								<li>模块3</li>
+								<li>模块4</li>
+								<li>模块5</li>
+								<li>模块6</li>
+								<li>模块7</li>
+							</ul>
+						</div>
+					</div>
+					<div class="community-form-line">
+						<label>内容：</label>
+						<textarea class="community-textarea"></textarea>
+					</div>
+					<div class="community-form-line submit-line">
+						<button type="button" class="submit-btn">提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="import" href="/widget/footer/footer.html?__inline">
+</body>
+  	<script>
+        var $option = $('ul.select-option');
+        var $btn = $('.select-btn');
+        var speed = 10;
+        // 下拉菜单显示隐藏
+            $btn.click(function(e) {
+                $(this).siblings('ul.select-option').slideToggle(speed, function(){
+                });
+                return false;
+            });
+            $option.find('li').click(function(){
+                $(this).parent().siblings('.select-btn').children('input').val($(this).text());
+                $option.slideUp(speed, function(){
+                });
+            })
+            // 点击其他位置，收起下拉菜单
+            $(document).click(function(e) {
+                    $option.slideUp(speed, function(){
+                });
+            });
+    </script>
+</html>

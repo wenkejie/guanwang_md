@@ -1,0 +1,172 @@
+// =====================================================
+// ============== cargoGM官网掌柜故事页样式 =================
+// =====================================================
+
+// ================== 默认样式重置 ======================
+@import "/static/less/variables.less";
+@import "/static/less/cube.less";
+
+// ================== 字体图标引入 ======================
+@import "/static/less/font-icon.less";
+
+.iconfontset();
+// ======================= end =========================
+body{background-color: #f2f7f8;font-size: 14px;color: #747474;}
+// ================= 展柜故事列表页 ====================
+// banner
+.story-bg{
+	display: block;
+	width: 998px;
+	height: 275px;
+	margin: 0 auto;
+}
+.page-s-container{
+	width: 998px;
+	margin: 23px auto;
+	min-height: 350px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.page-headline{
+	display: block;
+	position: absolute;
+	margin-top: -77px;
+	width: 320px;
+	height: 54px;
+	line-height: 54px;
+	text-align: center;
+	background-color: #0084e4;
+	color: #fff;
+	font-size: 20px;
+}
+.story-panel{
+	position: relative;
+	padding: 29px 13px;
+	margin: 0 11px;	
+	width: 977px;
+	border-bottom: 1px dashed #E1E1E1;
+	overflow: hidden;
+	&:hover .story-content p{
+		color: #0084e6;
+	}
+}
+.story-panel a{
+	color: #747474;
+}
+.story-panel-last{
+	border-bottom: none;
+}
+// 文章列表图片
+.story-img{
+	display: inline-block;
+	width:210px;
+	height:128px;
+	background-image: url('/static/img/story-img.png')
+}
+.story-content{
+	display: inline-block;
+	width: 736px;
+	vertical-align: top;
+	padding-top: 22px;
+	padding-left: 12px;
+}
+
+.story-content p{
+	font-size: 12px;
+}
+.story-content .story-title{
+	padding-bottom: 22px;
+	font-size: 18px;
+}
+// 翻页块
+.page-wrap{
+	text-align: right;
+	padding: 11px 16px 24px 0;
+}
+.page-btn{
+	padding:7px;
+	border:1px solid #ccc;
+	color: #8697B3;
+	font-weight: bold;
+	&:hover{
+		color:#4D7AFF;
+	}
+}
+.page-btn-now{
+	color: #fff;
+	background-color:#8B8B8B; 
+	border:none;
+	&:hover{
+		color:#fff;
+	}
+}
+// ============== 展柜故事详情页 =========
+// 文章标题块
+.article-title-panel{
+	padding-top: 25px;
+	padding-bottom: 12px;
+	text-align: center;
+	overflow: hidden;
+}
+.article-title-panel h1{
+	font-size: 18px;
+	font-weight: bold;
+}
+.article-info-wrap{
+	padding: 18px 189px 0;
+	font-size: 12px;
+	overflow: hidden;
+}
+.article-info-source{
+	float: left;
+}
+.article-info-date{
+	float: right;
+}
+.article-panel{
+	padding: 25px 16px;
+	margin: 0;	
+	width: 998px;
+	border-bottom: 1px solid #E1E1E1;
+	border-top: 1px solid #E1E1E1;
+	overflow: hidden;
+	&:hover .story-content p{
+		color: #0084e6;
+	}
+}
+.article-panel p{
+	font-size: 14px;
+	text-indent: 2em;
+	line-height: 2.5em;
+}
+// 文章图片
+.article-img{
+	margin: 10px 0;
+}
+// 文章翻页
+.article-page-panel{
+	padding: 20px 16px 25px;
+	overflow: hidden;
+}
+.article-page-wrap{
+	float: left;
+}
+.article-page-wrap a{
+	display: block;
+	color: #666;
+	&:hover{
+		color:#000;
+	}
+}
+.page-prev{
+	display: block;
+	margin-top: 10px;
+	float: right;
+	color: #666;
+	&:hover{
+		color:#000;
+	}
+}
+.page-prev i{
+	padding-right: 5px;
+}

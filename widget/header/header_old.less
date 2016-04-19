@@ -1,0 +1,84 @@
+// ========================================
+// ============= 顶部结构 ==================
+// ========================================
+
+
+.header{
+	background-color: #0084e4;
+	color: #fff;
+}
+
+.header-container{
+	height: 73px;width: 998px;margin: 0 auto;
+}
+
+// ============ 主体logo ====================
+.main-logo{
+	display: inline-block;
+	vertical-align: middle;
+	height: 53px;width: 90px;
+	a{
+	   display: block;
+	   width: 90px;height: 53px;line-height: 53px;
+	   background: url("/static/img/logo.png") 0 0 no-repeat;
+	}
+}
+
+// ========================================
+
+// ============ 主导航 ====================
+.main-nav{
+	&:extend(.clearfix all);
+	display: inline-block;
+	// margin-left: 180px;
+	margin-left: 100px;
+	vertical-align: middle;
+	font-size: 0;
+}
+
+.main-nav-cell{
+	display: inline-block;
+	width: 120px;line-height: 73px;
+	font-size: 14px;
+}
+
+.main-nav-link{
+	display: block;
+	color: #fff;
+	text-align: center;
+	&:hover{
+		background-color: #5cace4;
+	}
+}
+
+// ========================================
+
+// ============= 登入区域 ==================
+.login-bar{
+	float: right;
+	line-height: 73px;
+
+}
+
+.login-bar-cell{
+	display: inline-block;
+	width: 42px;height: 22px;line-height: 22px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12px;color: #fff;
+	
+}
+
+.login-link{
+	background-color: #329ced;
+}
+.user-name{
+	width: 145px;
+	text-overflow:ellipsis; 
+	white-space:nowrap; 
+	overflow:hidden; 
+}
+.bar-link{
+	width: 60px;
+}
+// ========================================

@@ -1,0 +1,48 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>支付</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="ClearType" content="true">
+	<!-- 样式引入 -->
+	<link rel="stylesheet" type="text/css" href="/static/less/global.less">
+	<link rel="stylesheet" type="text/css" href="./pay.less">
+
+	<script type="text/javascript" src="/static/js/require.js"></script>
+	<!-- 样式 end -->
+</head>
+<body>
+	<link rel="import" href="/widget/header/header.html?__inline">
+	<div class="page">
+		<div class="page-container">
+			<div class="gui-panel">
+				<h3 class="pay-title">支付成功</h3>
+				<ul class="pay-progress progress-thr">
+					<li class="pay-progress-cell">确认订单</li>
+					<li class="pay-progress-cell">支付</li>
+					<li class="pay-progress-cell">支付成功</li>
+				</ul>
+				<div class="pay-grid pay-grid-feadback">
+					<div class="pay-feadback">
+						<span class="pay-feadback-icon"></span>
+						<div class="pay-feadback-cnt">
+							<h3>您已支付成功</h3>
+							<p>请等待客服确认</p>
+							<p>如果您需要发票请点击<a href="javascript:">索要发票</a> </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="import" href="/widget/footer/footer.html?__inline">
+	
+	<script type="text/javascript">
+	   
+	    	require(["./pay"])
+	    
+	</script>
+</body>
+</html>

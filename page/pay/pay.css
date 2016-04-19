@@ -1,0 +1,496 @@
+.pay-table-area {
+  padding: 12px 0;
+  margin-bottom: 100px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.pay-title {
+  height: 18px;
+  line-height: 18px;
+  padding-left: 7px;
+  margin: 20px 0;
+  border-left: 3px solid #207afb;
+  font-size: 16px;
+  color: #0084e4;
+}
+.pay-progress {
+  width: 998px;
+  height: 24px;
+  background: url("../../images/web/pay-process.png");
+  background-position: 0 0;
+  font-size: 0;
+}
+.progress-sec {
+  background-position: 0 -24px;
+}
+.progress-thr {
+  background-position: 0 -48px;
+}
+.pay-progress-cell {
+  display: inline-block;
+  width: 33.3%;
+  line-height: 24px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+.pay-form-extend {
+  text-align: right;
+}
+.form-extend-tips {
+  color: #fd6668;
+}
+.pay-total-extend {
+  color: #aaa;
+}
+.pay-total-num {
+  color: #fd6865;
+  font-size: 20px;
+}
+.agreement-line label,
+.agreement-line input {
+  display: inline-block;
+  vertical-align: middle;
+}
+.agreement-items {
+  display: inline-block;
+  vertical-align: middle;
+}
+.gui-btn-submit {
+  width: 198px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #0084e4;
+  color: #fff;
+  font-size: 20px;
+}
+.order-table-area {
+  padding-bottom: 32px;
+  padding-top: 20px;
+}
+.order-table-area h3 {
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.order-table td,
+.order-table th {
+  border: 1px solid #a1cff1;
+  color: #666;
+}
+.order-table th {
+  background-color: #e6f3fa;
+}
+.order-table .price {
+  font-size: 16px;
+}
+.mode-list-header {
+  padding-left: 15px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f7f7f7;
+  border-left: 2px solid #207abf;
+  font-size: 12px;
+}
+.pay-card-list {
+  padding: 20px;
+  font-size: 0;
+}
+.pay-card-cell {
+  display: inline-block;
+  width: 145px;
+  height: 50px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  background: url("../../images/web/bank-logo.png");
+  border: 1px solid #ececec;
+  vertical-align: middle;
+  font-size: 14px;
+  cursor: pointer;
+}
+.pay-card-cell:nth-child(6n) {
+  margin-right: 0;
+}
+.pay-card-cell:hover {
+  border-color: #267fcc;
+}
+.pay-card-current {
+  border-color: #267fcc;
+}
+.bank-1 {
+  background-position: 0 -50px;
+}
+.bank-2 {
+  background-position: 0 -100px;
+}
+.bank-3 {
+  background-position: 0 -150px;
+}
+.bank-4 {
+  background-position: 0 -200px;
+}
+.bank-5 {
+  background-position: 0 -250px;
+}
+.bank-6 {
+  background-position: 0 -300px;
+}
+.bank-7 {
+  background-position: 0 -350px;
+}
+.bank-8 {
+  background-position: 0 -400px;
+}
+.bank-9 {
+  background-position: 0 -450px;
+}
+.bank-10 {
+  background-position: 0 -500px;
+}
+.bank-11 {
+  background-position: 0 -550px;
+}
+.bank-12 {
+  background-position: 0 -600px;
+}
+.bank-13 {
+  background-position: 0 -650px;
+}
+.bank-14 {
+  background-position: 0 -700px;
+}
+.bank-15 {
+  background-position: 0 -750px;
+}
+.bank-16 {
+  background-position: 0 -800px;
+}
+.bank-17 {
+  background-position: 0 -850px;
+}
+.bank-18 {
+  background-position: 0 -900px;
+}
+.bank-19 {
+  background-position: 0 -950px;
+}
+.bank-20 {
+  background-position: 0 -1000px;
+}
+.bank-21 {
+  background-position: 0 -1050px;
+}
+.bank-22 {
+  background-position: 0 -1100px;
+}
+.bank-23 {
+  background-position: 0 -1150px;
+}
+.bank-24 {
+  background-position: 0 -1200px;
+}
+.bank-25 {
+  background-position: 0 -1250px;
+}
+.bank-26 {
+  background-position: 0 -1300px;
+}
+.bank-27 {
+  background-position: 0 -1350px;
+}
+.bank-28 {
+  background-position: 0 -1400px;
+}
+.bank-29 {
+  background-position: 0 -1450px;
+}
+.bank-30 {
+  background-position: 0 -1500px;
+}
+.bank-31 {
+  background-position: 0 -1550px;
+}
+.bank-32 {
+  background-position: 0 -1600px;
+}
+.bank-33 {
+  background-position: 0 -1650px;
+}
+.bank-34 {
+  background-position: 0 -1700px;
+}
+.bank-35 {
+  background-position: 0 -1750px;
+}
+.bank-36 {
+  background-position: 0 -1800px;
+}
+.bank-37 {
+  background-position: 0 -1850px;
+}
+.bank-38 {
+  background-position: 0 -1900px;
+}
+.bank-39 {
+  background-position: 0 -1950px;
+}
+.bank-40 {
+  background-position: 0 -2000px;
+}
+.pay-bank-mask {
+  width: 160px;
+  height: 45px;
+  padding: 8px 5px;
+  cursor: pointer;
+}
+.pay-bank-mask img {
+  height: 100%;
+}
+.pay-mode-define {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.pay-grid-confirm {
+  margin-top: 20px;
+}
+.pay-grid-submit {
+  text-align: right;
+}
+.pay-grid-feadback {
+  min-height: 310px;
+  margin: 20px 0;
+  border: 1px solid #e7e7e7;
+}
+.pay-form-area {
+  padding: 25px;
+  background-color: #fafafa;
+  border: 1px solid #e7e7e7;
+}
+.pay-feadback {
+  width: 325px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+.pay-feadback-icon {
+  display: inline-block;
+  width: 59px;
+  height: 58px;
+  background: url("../../images/web/pay-fd.png");
+  vertical-align: top;
+}
+.pay-feadback-cnt {
+  display: inline-block;
+  padding-left: 15px;
+  vertical-align: top;
+}
+.pay-feadback-cnt h3 {
+  color: #0083e2;
+}
+.product-tips {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+}
+.product-tips-hover .product-tips-cnt {
+  display: block;
+}
+.product-tips-icon {
+  color: #666;
+}
+.product-tips-icon:hover {
+  color: #0083e2;
+}
+.product-tips-cnt {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  z-index: 200;
+  display: none;
+  width: 260px;
+  padding: 5px;
+  border: 3px solid #e1e1e1;
+  background-color: #fff;
+  color: #666;
+}
+.pay-mode-list {
+  border-bottom: 3px solid #bcbcbc;
+}
+.pay-mode-item {
+  cursor: pointer;
+}
+.mode-item-break {
+  cursor: default;
+  background-color: #f9f9f9;
+}
+.mode-item-break .mode-item-cnt {
+  display: block;
+}
+.mode-item-break .mode-item-slider {
+  display: none;
+}
+.mode-item-cnt {
+  display: none;
+}
+.mode-item-slider {
+  float: right;
+  padding-right: 21px;
+}
+.mode-item-slider i {
+  font-size: 18px;
+  color: #999;
+}
+.mode-item-header {
+  height: 80px;
+  line-height: 80px;
+  padding-left: 15px;
+  border-top: 1px solid #ececec;
+}
+.mode-item-header h3,
+.mode-item-header span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #666;
+}
+.mode-item-header span {
+  color: #999;
+}
+.bank-card-1 {
+  background-image: url("../../images/web/bank1.jpg");
+  background-position: 0 -45px;
+}
+.gui-input-big {
+  width: 100px;
+}
+.tal {
+  text-align: left;
+}
+.pl13 {
+  padding-left: 113px;
+}
+.m-item-header {
+  height: auto;
+  line-height: inherit;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.m-item-header h4 {
+  font-size: 16px;
+}
+.tar {
+  text-align: right;
+}
+.u-currency {
+  font-size: 20px;
+  color: #a0a0a0;
+}
+.m-item-header {
+  height: auto;
+  line-height: inherit;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.m-item-header h4 {
+  font-size: 16px;
+}
+.order-table-area1 {
+  padding-bottom: 20px;
+}
+.m-card-list {
+  padding-left: 16px;
+  padding-top: 0;
+}
+.color3 {
+  color: #333333;
+}
+.color9 {
+  color: #999999;
+}
+.form-extend-tips1 {
+  color: #999;
+}
+.gui-tags-cell2 {
+  min-width: 72px;
+  text-align: center;
+}
+.m-order-table {
+  border: 1px solid #a1cff1;
+}
+.m-order-table th {
+  border-bottom: 1px solid #a1cff1;
+  color: #666;
+  background-color: #e6f3fa;
+}
+.m-order-table td:not(:first-child) {
+  border-bottom: 1px solid #a1cff1;
+}
+.m-order-table .price {
+  font-size: 16px;
+}
+.tac {
+  text-align: center;
+}
+.m-code-wrap {
+  position: relative;
+}
+.m-code {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.u-code-img-wrap {
+  position: relative;
+}
+.u-code-img {
+  width: 260px;
+  height: 260px;
+  padding: 25px;
+  border: 1px solid #e7e7e7;
+}
+.weixin-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -22px;
+  margin-top: -22px;
+  width: 44px;
+  height: 44px;
+}
+.u-code-footer-img {
+  margin-top: 12px;
+  width: 260px;
+}
+.code-tips {
+  position: absolute;
+  top: 20px;
+  right: 133px;
+}
+.bold {
+  font-weight: bold;
+}
+.pay-card-cell1 {
+  background: url("../../images/web/weixin-pay.png") no-repeat;
+  background-size: 100% 100%;
+}
+.tal {
+  text-align: left;
+}
+.mb80 {
+  margin-bottom: 80px;
+}
+.pl88 {
+  padding-left: 88px;
+}
+.bt {
+  border-top: 1px solid #e7e7e7 ;
+}
+.skin-color-red {
+  color: #fd6865;
+}
+.pay-form-area1 {
+  background-color: white;
+  border: none;
+}
+.u-pay-other-tips {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}

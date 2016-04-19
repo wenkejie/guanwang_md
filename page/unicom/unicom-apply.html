@@ -1,0 +1,98 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>demo</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="ClearType" content="true">
+	<!-- 样式引入 -->
+	<!-- <link rel="stylesheet" type="text/css" href="static/less/style.less"> -->
+	<link rel="stylesheet" type="text/css" href="/static/less/global.less">
+	<link rel="stylesheet" type="text/css" href="./unicom.less">
+
+	<script type="text/javascript" src="/static/js/require.js"></script>
+	<!-- 样式 end -->
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+	<!-- <link rel="import" href="/widget/header/header.html?__inline"> -->
+	<link rel="import" href="/widget/header/header_new.html?__inline">
+	<div class="page">
+		<div class="page-container"  ms-controller="IndexCtrl">
+			<div class="page-title"><div class="page-title-cnt"><span class="page-info">掌门人申请</span></div></div>
+		   <div class="unicom-form-grid">
+		   		<div class="form-line">
+		   			<label class="gui-label">公司名称：</label>
+		   			<div class="form-line-cnt form-line-error">
+		   				<div class="gui-input gui-input-apply">
+		   					<input class="gui-input-text" type="text">
+		   				</div>
+		   				<p class="form-line-tips">请填写公司姓名</p>
+		   			</div>
+		   		</div>
+		   		<div class="form-line">
+		   			<label class="gui-label">掌门人姓名：</label>
+		   			<div class="gui-input gui-input-apply">
+		   				<input class="gui-input-text" type="text">
+		   			</div>
+		   		</div>
+		   		<div class="form-line">
+		   			<label class="gui-label">掌门人手机：</label>
+		   			<div class="gui-input gui-input-apply">
+		   				<input class="gui-input-text" type="text">
+		   			</div>
+		   		</div>
+		   		<div class="form-line">
+		   			<label class="gui-label">互联负责人：</label>
+		   			<div class="gui-input gui-input-apply">
+		   				<input class="gui-input-text" type="text">
+		   			</div>
+		   		</div>
+		   		<div class="form-line">
+		   			<label class="gui-label">负责人手机：</label>
+		   			<div class="gui-input gui-input-apply">
+		   				<input class="gui-input-text" type="text">
+		   			</div>
+		   		</div>
+		   		<div class="form-line">
+		   			<label class="gui-label">业务特色：</label>
+		   			<label class="gui-checkbox">
+		   				<input type="checkbox">
+		   				出口整箱
+		   			</label>
+		   			<label class="gui-checkbox">
+		   				<input type="checkbox">
+		   				出口拼箱
+		   			</label>
+		   			<label class="gui-checkbox">
+		   				<input type="checkbox">
+		   				空运
+		   			</label>
+		   		</div>
+		   		<div class="form-line">
+		   			<label class="gui-label vat">备注：</label>
+		   			<div class="gui-textarea">
+		   				<textarea placeholder="建议填写优势航线与优势船公司"></textarea>
+		   			</div>
+		   		</div>
+		   		<div class="form-line form-line-unlabel">
+		   			<a class="gui-btn gui-btn-apply" href="javascript:">提交申请</a>
+		   		</div>
+		   </div>
+		</div>
+	</div>
+
+	<link rel="import" href="/widget/footer/footer.html?__inline">
+	
+	<script type="text/javascript">
+	   
+	    	require(["./unicom"])
+	    	$('#jump-btn').click(function(){
+    			
+    
+	    })
+	    
+	</script>
+</body>
+</html>

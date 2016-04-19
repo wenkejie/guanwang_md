@@ -1,0 +1,41 @@
+
+<!-- 
+<div class="rg-input input-padding"  >
+    
+
+</div> 
+-->
+
+<div class="select-box" >
+    <div class="select-title" data-value="">
+        <input type="hidden" ms-attr-name="inputNames.province" ms-duplex-required="curRegion.province"></input>
+        <input type="text" readonly="readonly" ms-attr-name="inputNames.provinceName" 
+            ms-duplex="curRegion.provinceName" placeholder="省" />
+        <button type="button" class="select-arrow" ms-click="toggle('p')"><i class="iconfont">&#xe608;</i></button>
+    </div>
+    <ul class="select-option" ms-visible="_toggle.p"   >
+        <li ms-repeat="provinces" ms-text="el.name" ms-click="chooseProv(el)" ms-attr-title="el.name"></li>
+    </ul>
+</div>
+<div class="select-box select-box-mid">
+    <div class="select-title" data-value="" >
+        <input type="hidden" ms-attr-name="inputNames.city" ms-duplex-required="curRegion.city"></input>
+        <input type="text" ms-attr-name="inputNames.cityName"  
+            ms-duplex="curRegion.cityName" placeholder="市">
+        <button type="button" class="select-arrow" ms-click="toggle('c')" ><i class="iconfont">&#xe608;</i></button>
+    </div>
+    <ul class="select-option"  ms-visible="_toggle.c">
+        <li ms-repeat="cities" ms-text="el.name" ms-click="chooseCity(el)" ms-attr-title="el.name"></li>
+    </ul>
+</div>
+<div class="select-box">
+    <div class="select-title">
+        <input type="hidden" ms-attr-name="inputNames.district"  ms-duplex="curRegion.district"></input>
+        <input type="text" ms-attr-name="inputNames.districtName"
+            ms-duplex="curRegion.districtName" placeholder="区">
+        <button type="button" class="select-arrow" ms-click="toggle('d')"><i class="iconfont">&#xe608;</i></button>
+    </div>
+    <ul class="select-option"  ms-visible="_toggle.d">
+        <li ms-repeat="districts" ms-text="el.name" ms-click="chooseDistrict(el)" ms-attr-title="el.name"></li>
+    </ul>
+</div>

@@ -1,0 +1,16 @@
+{
+  "name": "jello-demo",
+  "version": "0.1.0",
+  "description": "jello-demo",
+  "keywords": [
+    "jello-demo"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "fis-parser-less-2.x": "^0.1.4",
+    "fis-postprocessor-autoprefixer": "0.0.5",
+    "fis3-hook-amd": "~0.1.3",
+    "fis3-jello": "^1.0.3",
+    "fis3-packager-deps-pack": "~0.0.1"
+  }
+}

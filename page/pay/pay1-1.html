@@ -1,0 +1,122 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>清单</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="ClearType" content="true">
+	<!-- 样式引入 -->
+	<!-- <link rel="stylesheet" type="text/css" href="static/less/style.less"> -->
+	<link rel="stylesheet" type="text/css" href="/static/less/global.less">
+	<link rel="stylesheet" type="text/css" href="./pay.less">
+	<link rel="stylesheet" type="text/css" href="./pay-1.less">
+
+	<script type="text/javascript" src="/static/js/require.js"></script>
+	<!-- 样式 end -->
+</head>
+<body>
+	<link rel="import" href="/widget/header/header.html?__inline">
+	<div class="page">
+		<div class="page-container">
+			<div class="gui-panel" ms-controller="demo1">
+				<h3 class="pay-title">产品名称</h3>
+				<ul class="pay-progress">
+					<li class="pay-progress-cell">确认订单</li>
+					<li class="pay-progress-cell">支付</li>
+					<li class="pay-progress-cell">支付成功</li>
+				</ul>
+				<div class="pay-grid pay-grid-confirm">
+					<div class="pay-form-area mb80">
+						<div class="form-line">
+							<label class="gui-label">订单类型：</label>
+							<ul class="gui-tags-area">
+								<li class="gui-tags-cell gui-tags-current">充值</li>
+								<!--<li class="gui-tags-cell">半年</li>-->
+
+							</ul>
+						</div>
+						<div class="form-line">
+							<label class="gui-label">导入掌门数：</label>
+							<div class="form-line-cnt">
+								<div class="gui-tags-items">
+									<div class="gui-tags-cell gui-tags-cell2 gui-tags-current">海运整箱</div>
+									<div class="gui-input gui-input-big">
+										<input type="text" />
+									</div>
+									家&nbsp;&nbsp;
+									<div class="product-tips">
+										<a class="product-tips-icon" href="javascript:"><i class="iconfont">&#xe612;</i>&nbsp;300元/家</a>
+										<div class="product-tips-cnt">
+
+										</div>
+									</div>
+								</div>
+								<div class="gui-tags-items">
+									<div class="gui-tags-cell gui-tags-cell2">海运拼箱</div>
+									<div class="gui-input gui-input-big">
+										<input type="text" />
+									</div>
+									家&nbsp;&nbsp;
+									<div class="product-tips">
+										<a class="product-tips-icon" href="javascript:"><i class="iconfont">&#xe612;</i>&nbsp;300元/家</a>
+										<div class="product-tips-cnt">
+
+										</div>
+									</div>
+								</div>
+								<div class="gui-tags-items">
+									<div class="gui-tags-cell gui-tags-cell2">空运</div>
+									<div class="gui-input gui-input-big">
+										<input type="text" />
+									</div>
+									家&nbsp;&nbsp;
+									<div class="product-tips">
+										<a class="product-tips-icon" href="javascript:"><i class="iconfont">&#xe612;</i>&nbsp;300元/家</a>
+										<div class="product-tips-cnt">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pay-form-extend tal mt40 pl88 bt">
+							<div class="pay-total mt30">
+								<div>
+									<label>订单金额:</label>
+									<span class="u-currency">￥</span><span class="pay-total-num">1500.00</span>
+								</div>
+							</div>
+							<div class="agreement-line mt10 mb10">
+								<div class="agreement-items">
+									<input type="checkbox" id="11" class="checkbox">
+									<label class="" for="11">
+										同意
+										<a id="jOpenWin" href="javascript:">《奥利协议》</a>
+
+									</label>
+								</div>
+							</div>
+
+						</div>
+						<div class="pay-grid pay-grid-submit mt10 mb40 tal pl88">
+							<button class="gui-btn gui-btn-submit">提交</button>
+
+						</div>
+					</div>
+
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+	<link rel="import" href="/widget/footer/footer.html?__inline">
+	
+	<script type="text/javascript">
+	   
+	    	require(["./pay"])
+	    
+	</script>
+</body>
+</html>

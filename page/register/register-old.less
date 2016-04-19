@@ -1,0 +1,895 @@
+// =====================================================
+// ============== cargoGM官网注册页样式 =================
+// =====================================================
+
+// ================== 默认样式重置 ======================
+@import "/static/less/variables.less";
+@import "/static/less/cube.less";
+
+// ================== 字体图标引入 ======================
+@import "/static/less/font-icon.less";
+
+.iconfontset();
+// ======================= end =========================
+*{
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+body{
+	background: #f4f7fb;
+	// background-color: #14212a;
+	color: #666;font-size: 14px;
+}
+
+[type $="link"]:hover{
+	color: #1798f2;
+}
+
+.rg-header-content,.rg-body-cnt,.rg-footer-cnt{
+	width: 960px;margin: 0 auto;
+}
+
+
+.rg-header{
+	height: 358px;
+	background-color: #207abf;
+}
+
+.rg-header-content{
+	padding-top: 70px;
+}
+
+.rg-body{
+	// background: #f4f7fb;
+	padding: 40px 0;
+}
+.rg-body-cnt{
+	min-height: 450px;_height: 450px;margin-top: -258px;
+	background: #feffff;border: 1px solid #dededf;border-radius: 5px;
+}
+
+
+.rg-footer{
+	padding-top: 40px;padding-bottom: 50px;
+	background-color: #14212a;
+	color: #d0d0d0;
+}
+
+.rg-footer-cnt{
+	&:extend(.clearfix all);
+	font-size: 12px;
+}
+
+.rg-footer-left{
+	float: left;
+}
+
+.rg-footer-right{
+	float: right;
+	text-align: right;
+}
+
+
+
+.rg-logo{
+	display: inline-block;*display: inline;*zoom: 1;
+	vertical-align: middle;
+	height: 53px;width: 90px;
+  a{
+    display: block;
+    width: 90px;height: 53px;line-height: 53px;
+    background: url("/static/img/rg-logo.png") 0 0 no-repeat;
+  }
+}
+
+.rg-pageer-info{
+	display: inline-block;*display: inline;*zoom: 1;
+	height: 52px;line-height: 52px;margin-left: 15px;padding-left: 15px;padding-top: 15px;
+	border-left: 1px solid #f2f7f6;
+	vertical-align: middle;
+	font-size: 24px;color: #fff;
+}
+
+.rg-top-link{
+	float: right;
+	height: 53px;padding-top: 35px;
+	font-size: 12px;
+	a{
+		color: #fff;
+		&:hover{
+			color: #fff;
+		}
+	}
+}
+
+.rg-top-hry{
+	margin: 0 10px;
+	color: #dee4ee;
+}
+
+
+.rg-content{
+
+}
+
+
+//================步骤指示信息====================
+.rg-nav{
+	margin: 75px 0 50px 0;
+}
+
+.rg-nav-ul{
+	&:extend(.clearfix all);
+	width: 416px;margin: 0 auto;
+}
+
+.rg-nav-cell{
+	position: relative;
+	float: left;*display: inline;
+	&:extend(.clearfix all);
+	height: 3px;
+}
+
+.rg-nav-first{
+	.rg-nav-content{
+		left: 0;
+		margin-left: 0;
+	}
+}
+
+.rg-nav-last{
+	.rg-nav-content{
+		right: 0;left: auto;
+		margin-right: 0;
+	}
+}
+
+.rg-nav-current{
+	 .rg-nav-icon{
+	 	margin-top: -5px;height: 29px;line-height: 29px;
+	 	background-position: -72px -10px;
+	 }
+	 .rg-nav-line{
+	 	border-color: #17A7F8;
+	 }
+	 .rg-nav-info{
+	 	color: #17A5F8;font-weight: bold;
+	 }
+}
+
+.rg-nav-active{
+	.rg-nav-icon{
+	 	background-position: -40px -15px;
+	 }
+	 .rg-nav-line{
+	 	border-color: #17A7F8;
+	 }
+	 .rg-nav-info{
+	 	color: #17A5F8;
+	 }
+}
+
+.rg-nav-line{
+	float: left;*display: inline;
+	width: 104px;
+	border-top: 3px solid #ddd;
+}
+
+.rg-nav-content{
+	position: absolute;left: 50%;top: 50%;z-index: 12;
+	width: 24px;height: 24px;margin-left: -12px;margin-top: -12px;
+}
+
+ .rg-nav-info{
+ 	position: absolute;left: 50%;top: -25px;z-index: 11;
+ 	width: 100px;margin-left: -50px;
+	text-align: center;
+ }
+
+.rg-nav-icon{
+	width: 24px;height: 24px;line-height: 24px;
+	background: url(/static/img/register-icon.png);
+	background-position: -9px -15px;
+	text-align: center;color: #fff;
+}
+//================步骤指示结束=====================
+
+// ============== 分割线 ==========================
+.rg-hr{
+	width: 800px;margin: 0 auto;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+// =============== end =============
+
+.rg-form{
+	width: 800px;margin: 0 auto;
+	padding: 70px 30px;
+}
+
+.rg-form-center{
+	padding: 70px 0;padding-left: 242px;padding-top: 56px;
+	// text-align: center;
+}
+
+// 注册成功页
+.rg-form-record{
+	// width: 304px;
+	padding: 0;margin-top: 130px;
+}
+
+// 表单结构
+.rg-form-line{
+	padding: 10px 0;
+	font-size: 0;
+}
+
+.rg-form-line-first{
+	padding-bottom: 20px;
+}
+
+.rg-form-unlabel{
+	padding-left: 200px;padding-top: 22px;
+}
+
+.rg-label,.rg-input,.rg-btn,.rg-form-des,.rg-check-code,.rg-tips,.rg-check-btn{
+	display: inline-block;*display: inline;*zoom: 1;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.rg-form-des{
+	color: #17A7F8;
+}
+
+.rg-label{
+	width: 200px;padding-right: 15px;
+	text-align: right;
+}
+
+.rg-input{
+	padding-left: 45px;width: 334px;
+	&:hover{
+		.rg-input-enter,.rg-input-addon{
+			border-color: #666;
+		}
+		.rg-input-addon{
+			i{
+				color: #999;
+			}
+		}
+	}
+}
+.rg-input-before{
+	position: relative;
+}
+.rg-input-error{
+	.rg-input-enter{
+		border-color: #fd4013;
+	}
+	.rg-input-addon{
+		border-color: #666;
+		i{
+			color: #999;
+		}
+	}
+	&:hover{
+		.rg-input-enter{
+			border-color: #fd4013;
+		}
+	}
+}
+
+.rg-input-enter{
+	border: 1px solid #ddd;
+	width: 100%;height: 40px;line-height: 40px;padding: 0 13px;
+	border-top-right-radius: 3px;border-bottom-right-radius: 3px;
+	// transition: All 0.6s ease;
+	// &:focus,.focus{
+	// 	border-color: #1798F2
+	// }
+}
+
+.rg-input-addon{
+	position: absolute;left: 0;top: 0;z-index: 1;
+	width: 45px;height: 40px;line-height: 40px;
+	border: 1px solid #ddd;border-right: none;
+	border-top-left-radius: 3px;border-bottom-left-radius: 3px;
+	text-align: center;
+	i{
+		font-size: 20px;color: #c9c9c9;
+	}
+}
+
+.rg-input-check{
+	width: 214px;
+
+}
+
+.rg-check-code{
+	width: 115px;height: 38px;
+	margin-left: 4px;
+	img{
+		width: 115px;height: 38px;
+	}
+}
+
+.rg-btn{
+	width: 333px;height: 42px;line-height: 42px;
+	background: #207afb;border: none;border-radius: 3px;
+	cursor: pointer;
+	text-align: center;font-size: 16px;color: #fff;
+	&:hover{
+		background: #0D92EA;
+	}
+}
+
+.rg-btn-check{
+	width: 110px;
+	height: 40px;line-height: 40px;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+
+
+.rg-tips{
+	position: relative;
+	float: right;
+	width: 215px;padding-left: 14px;
+	// background: url('/static/img/register-icon.png') no-repeat;
+	font-size: 12px;
+}
+
+.rg-tips-icon{
+	position: absolute;left: 0;top: 3px;
+	width: 16px;height: 16px;
+	background: url('/static/img/register-icon.png') no-repeat;
+	vertical-align: middle;
+}
+
+.rg-tips-info{
+	padding-left: 5px;
+	vertical-align: middle;
+}
+
+.rg-tips-success{
+	.rg-tips-icon{
+		background-position: -20px -123px;
+	}
+}
+
+.rg-tips-normal{
+	.rg-tips-icon{
+		background-position: -20px -159px;
+	}
+}
+
+.rg-tips-error{
+	color: #fd4013;
+	.rg-tips-icon{
+		background-position: -20px -141px;
+	}
+}
+
+
+.rg-tips-top{
+	float: none;
+	width: 334px;
+	padding: 5px 10px 5px 24px;
+	border: 1px solid #ccc;background: #FFF2F2;border-color: #ff8e8e;
+	.rg-tips-icon{
+		left: 10px;top: 8px;
+	}
+}
+
+// ====== end ========
+
+// ================= 密码强度提示 =================
+.rg-possword-power{
+	position: absolute;left: auto;top: auto;
+	display: inline-block;
+	margin-left: 15px;padding: 10px;
+	vertical-align: top;border: 1px solid #ddd;border-radius: 5px;
+	font-size: 12px;
+	p{
+		color: #777;
+	}
+}
+
+.rg-possword-power-direction{
+	position:absolute; left:-7px;top:12px;
+	width: 14px;height: 16px;
+	color:#ddd;  font:14px  Arial, Helvetica, sans-serif;
+	em{
+		position:absolute; left:1px;top:0; 
+		color:#fff;font-size: 14px;font-style: normal;
+	}
+}
+
+.rg-energy-bars{
+	width: 200px;height: 6px;
+	padding-top: 5px;
+}
+
+.rg-energy-low{
+	.energy-bars-deep{
+		width: 60px;
+		background-color: #F27D24;
+	}
+	.rg-energy-info{
+		color: #F27D24;
+	}
+}
+
+.rg-energy-mid{
+	.energy-bars-deep{
+		width: 120px;
+		background-color: #F2D93B;
+	}
+	.rg-energy-info{
+		color: #F2D93B;
+	}
+}
+
+.rg-energy-strong{
+	.energy-bars-deep{
+		width: 180px;
+		background-color: #51C37B;
+	}
+	.rg-energy-info{
+		color: #51C37B;
+	}
+}
+
+.energy-bars-line{
+	float: left;
+	border-radius: 10px;
+	overflow: hidden;
+	height: 6px;width: 180px;
+	background: #ddd;
+}
+
+.energy-bars-deep{
+	float: left;
+	width: 60px;height: 6px;
+	background-color: #ddd;
+	transition: All 0.6s ease;
+}
+
+
+.rg-power-label{
+	display: block;
+	padding-top: 10px;
+	color: #aaa;
+}
+
+.rg-energy-info{
+	float: left;
+	width: 20px;margin-top: -6px;
+	text-align: center;
+}
+
+// ============ end =========
+// ================= 注册成功页 =================
+
+.rg-content-record{
+	width: 305px;
+	font-size: 0;
+}
+
+.rg-record-icon{
+	width: 41px;height: 40px;
+	background: url(/static/img/register-icon.png) -8px -73px;
+}
+
+.rg-record-left,.rg-record-right{
+	display: inline-block;*display: inline;*zoom: 1;
+	vertical-align: top;
+	font-size: 14px;
+}
+
+.rg-record-right{
+	padding-left: 15px;
+}
+
+.rg-record-link{
+	padding-top: 5px;
+	font-size: 12px;
+}
+
+
+//===================== end ====================
+
+//===================== 弹窗 ====================
+.rg-openwin{
+	position: absolute;left: 0;top: 0;right: 0;bottom: 0;z-index: 500;
+	width: 100%;height: 100%;
+}
+
+.rg-openwin-content{
+	position: absolute;left: 50%;top: 190px;z-index: 555;
+	width: 522px;min-height: 364px;margin-left: -261px;
+	background: #fff;border: 5px solid #989999;border-radius: 5px;
+}
+
+.rg-openwin-header{
+	position: relative;
+	height: 45px;line-height: 45px;padding: 0 20px;
+	border-bottom: 1px solid #e5e5e5;background: #f2f2f2;
+	font-size: 16px;
+}
+
+.re-openwin-close{
+	position: absolute;right: 15px;top: 12px;z-index: 502;
+	width: 20px;height: 20px;line-height: 20px;
+	text-align: center;font-size: 20px;font-weight: bold;
+	color: #999;
+	&:hover{
+		color: #666;
+	}
+}
+
+.rg-openwin-body{
+	padding: 45px 80px;
+	.rg-form-unlabel{
+		padding-left: 100px;padding-top: 15px;
+	}
+	.rg-label{
+		width: 100px;
+	}
+	
+	.rg-btn{
+		width: 132px;
+	}
+}
+
+.rg-tips-block{
+	max-width: 328px;
+}
+
+.rg-check-btn{
+	width: 96px;height: 42px;line-height: 42px;margin-left: 10px;
+	background: #ebebeb;border: none;border-radius: 5px;
+	cursor: pointer;
+	text-align: center;font-size: 12px;color: #666;
+	&:hover{
+		background: #ddd;
+	}
+}
+
+.rg-openwin-shadow{
+	position: absolute;left: 0;top: 0;right: 0;bottom: 0;z-index: 501;
+	width: 100%;height: 100%;
+	background: #000;opacity: 0.7;
+}
+
+//===================== end ====================
+//================= 底部内容样式 ================
+
+.rg-footer-left{
+	p{
+		padding: 5px 0;
+	}
+}
+
+.inside-link{
+	a,span{
+		display: inline-block;
+		vertical-align: middle;
+		color: #ddd;
+	}
+	span{
+		margin: 0 5px;
+	}
+}
+
+.phone-num{
+	color: #2279cb;font-size: 24px;
+}
+
+.company-info{
+	color: #b0afaf;
+}
+
+.wechat-link-info{
+	padding-top: 15px;
+}
+
+// ==================== end ======================
+
+
+
+
+// ================= 重置类样式引入 ================
+@import "/static/less/common.less";
+// ================= 基本资料 ==================
+.basic-form{
+	padding:30px 0 34px 162px;
+	
+	// padding:30px 39px 34px;
+	.rg-tips-top{
+		margin-left: 80px;margin-bottom: 20px;
+	}
+}
+.basic-title-contaner{
+	text-align: center;
+	width: 722px;
+	margin: 30px 109px 0;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.basic-title{
+	font-size: 30px;
+	color: #0085e5;
+}
+.basic-tip{
+	width: 345px;
+	margin:0 auto;
+}
+.form-line-first{
+	padding-top: 0;
+}
+.btn-width{
+	width: 284px;
+	margin-left:78px; 
+}
+.input-padding{
+	text-align: left;
+	padding-left: 0;
+}
+.input-radius{
+	border-radius: 3px;
+}
+.information-label{
+	display: inline-block;
+	text-align: right;
+	vertical-align: middle;
+	padding-right: 15px;
+	font-size: 14px;
+	height: 38px;
+	line-height: 38px;
+	width: 80px;
+}
+.information-label-notice{
+	color: #EC0002;
+}
+
+.select-box{
+	position: relative;
+	display: inline-block;
+}
+.select-box-source{
+	float: none;
+}
+.select-box-mid{
+	margin:0 23px;
+}
+.select-title{
+	width: 93px;
+ 	height: 34px;
+ 	border: 1px solid #ddd;
+ 	border-radius: 3px;	
+ 	&:hover{
+ 		border-color: #666;
+ 	}
+}
+.select-title input{
+	position: absolute;
+	top:1px;
+	padding-left: 8px;		
+	height: 32px;
+	line-height: 32px;
+	width: 73px;
+	border: none;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+.select-arrow{
+	position: absolute;
+	top:1px;
+	right:1px;
+
+	display: inline-block;
+	width: 17px;
+	height: 32px;
+	padding:0;
+	border: none;
+	background-color: #f1f1f1;
+	text-align: center;
+}
+.select-title-source{
+	width: 162px;	
+}
+.select-title-source input{
+	width: 142px;
+}
+.select-option{
+	display: none;
+	padding-left: 12px;
+	position: absolute;
+	border: 1px solid #ddd;
+	left: 0;
+	width: 100%; 
+
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #fff;
+	cursor: pointer;
+	z-index: 9999;
+	max-height: 152px;
+}
+.select-option li{
+	height: 25px;
+	display: block;
+	width: 100%;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+.select-option li:hover{
+	color:#0082E4;
+}
+.select-contaner-source{
+	width: 161px;
+}
+.checkbox-btn{
+	vertical-align: middle;
+	padding-right: 8px;
+}
+.checkbox-label{
+	margin: 0 30px;
+}
+.file-contaner{
+	position: relative;
+	text-align: center;
+	width: 123px;
+	height: 32px;
+	line-height: 32px;
+	background-color: #ccc;
+	color: #6e6e6e;
+	cursor: pointer;
+	overflow: hidden;
+}
+.file-btn{
+	position: absolute;
+	top:0;
+	right: 0;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	width: 210px;
+	height: 32px;
+	font-size: 210px;
+	cursor: pointer;
+	z-index: 100;
+}
+// ================= end ====================
+// ================= 忘记密码 ================
+.find-form{
+	padding-top: 78px;
+	padding-left: 242px;
+}
+// ================= end =====================
+// ================= 审核成功 ================
+.approve-form{
+	padding-top: 175px;
+	padding-left: 166px;
+}
+.approve-img{
+	display: inline-block;
+	background-image: url("/static/img/approve.png");
+	vertical-align: bottom;
+	width: 75px;
+	height: 72px;
+}
+.approve-content{
+	display: inline-block;
+	padding-left: 20px;
+}
+.approve-hint{
+	color:#0083E7;
+	font-size: 30px;
+}
+.approve-content p a{
+	text-decoration: underline;
+	color:#0083E7;
+}
+// ================= end =====================
+// ================= 登陆页面 ================
+.password-contaner{
+	width: 334px;
+	text-align: right;
+}
+.password-link{
+	color: #9E9E9E;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+// ================= end =====================
+
+// ================= 文件上传结构 ==============
+.rg-upload-area{
+	display: inline-block;
+	font-size: 14px;width: 334px;
+	text-align: left;
+	.webuploader-pick{
+		width: 123px;
+		height: 36px;padding: 0;
+		line-height: 36px;
+		background-color: #ccc;border: none;
+		box-shadow: none;border-radius: 3px;
+		color: #fff;
+	}
+
+}
+
+.upload-list{
+	text-align: left;
+}
+
+.upload-list-cell{
+	padding-top: 5px;
+	a{
+		color: #238ccd;
+	}
+	.del{
+		margin-left: 10px;
+    	color: #999;
+	}
+}
+
+// ================= end =====================
+
+// ================= tab切换结构 ==============
+.rg-tab{
+	padding: 10px;
+}
+
+.rg-tab-menu{
+	&:extend(.clearfix all);
+}
+
+.tab-menu-cell{
+	position: relative;
+	float: left;*display: inline;
+	width: 50%;height: 44px;line-height: 44px;
+	background-color: #d8e7ff;
+	cursor: pointer;font-size: 14px;font-weight: bold;
+	text-align: center;color: #0078d7;
+	&:hover{
+		background: lighten(#3293ef,10%);
+		color: #fff;
+	}
+}
+
+.tab-menu-cell-current{
+	background-color: #3293ef;
+	color: #fff;
+	.tab-menu-arrow{
+		display: block;
+	}
+	&:hover{
+		background-color: #3293ef;
+	}
+}
+
+.tab-menu-arrow{
+	position: absolute;bottom: -8px;left: 50%;z-index: 1;
+	width: 0;height: 0;margin-left: -8px;
+	display: none;
+	border-style: solid;
+	border-width: 8px 8px 0 8px;
+	border-color: #3293ef transparent transparent transparent;
+}
+
+// ================= end =====================
+
+.vat{
+	vertical-align: top;
+}

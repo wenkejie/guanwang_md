@@ -1,0 +1,568 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>demo</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <meta http-equiv="ClearType" content="true">
+	<!-- 样式引入 -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- 样式 end -->
+	<!-- 插件及js应用 -->
+	<!-- Jquery引入 -->
+	<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function (){
+			var filter = $('.j-filter');
+			var advSearch = $('.demo-dialog-adv');
+			filter.click(function() {
+				$('.dui-filter-down').removeClass('none');
+			});
+			$('.dui-status-list-cell').click(function() {
+				$('.dui-filter-down').addClass('none');
+			});
+			$('.j-adv-open').click(function() {
+				advSearch.removeClass('none');
+			});
+			$('.j-adv-search').click(function() {
+				advSearch.addClass('none');
+			});
+			$('.dui-status-icon-online').click(function() {
+				$('.demo-dialog-chat').removeClass('none');
+			});
+			$('.j-send').click(function() {
+				if ($('.dui-chat-textarea').val() == "") {
+					$('.dui-chat').addClass('error');
+				}else{
+					$('.dui-chat').removeClass('error');
+				};
+			});
+
+			$('.j-dialog-close').click(function() {
+				$('.demo-dialog-chat').addClass('none');
+			});
+		})
+	</script>
+	<!-- js end -->
+</head>
+<body>
+	<div class="dui-wrap dui-wrap-user">
+		<div class="dui-wrap-header">
+			<div class="dui-search-area">
+				<div class="dui-search-area-left">
+					<input class="dui-input dui-input-search" type="text" placeholder="输入姓名、手机、微信昵称、公司名均可">
+				</div>
+				<div class="dui-search-area-right">
+					<button class="dui-btn">搜索</button>
+					<a class="advanced-search-link j-adv-open" href="javascript:">高级搜索</a>
+				</div>
+			</div>
+		</div>
+		<div class="dui-wrap-body">
+			<div class="dui-table-area">
+				<table class="dui-table">
+					<thead>
+						<th width="115">姓名/微信昵称</th>
+						<th width="95">手机号</th>
+						<th>公司</th>
+						<th class="condition" width="70">
+							<div class="dui-filter">
+								<a class="dui-filter-link j-filter" href="javascript:">状态 <i class="icon-down"></i></a>
+								<div class="dui-filter-down none">
+									<div class="dui-filter-content">
+										<ul class="dui-status-list">
+											<li class="dui-status-list-cell">在线</li>
+											<li class="dui-status-list-cell">离线</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon dui-status-icon-online">
+									<i class="icon-dkf"></i>
+									<p>在线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon dui-status-icon-online">
+									<i class="icon-dkf"></i>
+									<p>在线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon dui-status-icon-online">
+									<i class="icon-dkf"></i>
+									<p>在线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon dui-status-icon-online">
+									<i class="icon-dkf"></i>
+									<p>在线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon dui-status-icon-online">
+									<i class="icon-dkf"></i>
+									<p>在线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon dui-status-icon-online">
+									<i class="icon-dkf"></i>
+									<p>在线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon dui-status-icon-online">
+									<i class="icon-dkf"></i>
+									<p>在线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon dui-status-icon-online">
+									<i class="icon-dkf"></i>
+									<p>在线</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="user-name">风清扬</p>
+								<p>神一样的对手</p>
+							</td>
+							<td>
+								13958208888
+							</td>
+							<td>
+								奥林网络科技宁波有限公司
+							</td>
+							<td class="condition">
+								<div class="dui-status-icon">
+									<i class="icon-dkf"></i>
+									<p>离线</p>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="demo-dialog-adv none" style="width: 280px;position: fixed;left: 50%;top: 50px;z-index: 1000;margin-left: -140px;">
+	    <!-- 以下代码嵌入插件弹窗 ，弹窗宽度控制为280px;-->
+		<div class="dui-dialog">
+			<div class="dui-dialog-content">
+				<div class="dui-form dui-form-adv">
+					<div class="dui-form-line">
+						<label class="dui-label">姓名：</label>
+						<input class="dui-input" type="text">
+					</div>
+					<div class="dui-form-line">
+						<label class="dui-label">手机号：</label>
+						<input class="dui-input" type="text">
+					</div>
+					<div class="dui-form-line">
+						<label class="dui-label">微信昵称：</label>
+						<input class="dui-input" type="text">
+					</div>
+					<div class="dui-form-line">
+						<label class="dui-label">公司名：</label>
+						<input class="dui-input" type="text">
+					</div>
+					<div class="dui-form-line dui-form-line-unlabel">
+						<button class="dui-btn j-adv-search">搜索</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="demo-dialog-chat none" style="width: 380px;position: fixed;left: 50%;top: 50px;z-index: 1000;margin-left: -190px;">
+	    <!-- 以下代码嵌入插件弹窗 ，弹窗宽度控制为380px;-->
+		<div class="dui-dialog dui-dialog-chat">
+			<div class="dui-dialog-content">
+				<div class="dui-chat">
+					<p class="dui-chat-tips">
+						<i class="icon-tips"></i>
+						发送内容不能为空，请重新输入
+					</p>
+					<textarea class="dui-chat-textarea" placeholder="请输入您想发送给会员的消息（不超过100字）" autofocus></textarea>
+				</div>
+			</div>
+			<div class="dui-dialog-footer">
+				<button class="dui-btn j-dialog-close">关闭</button>
+				<button class="dui-btn j-send">发送</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

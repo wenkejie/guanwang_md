@@ -1,0 +1,207 @@
+// ========================================
+// ============ 首页细节样式 ===============
+// ========================================
+
+// 首页布局块
+.home-grid{
+	min-height: 650px;padding: 50px 0;
+	text-align: center;
+}
+
+.home-grid-gray{
+	background-color: #ecf0f2;
+}
+
+.home-grid-blue{
+	background-color: #367bd2;
+}
+
+.home-title,.home-summary{
+	text-align: center;
+}
+
+.home-title{
+	color: #0084e3;font-size: 30px;
+}
+
+.home-summary{
+	width: 485px;margin: 0 auto;
+	color: #999;
+}
+
+
+
+
+
+// 产品区域
+.home-product-area{
+	padding: 50px 0;
+}
+
+.computer-pic{
+	display: inline-block;
+	width: 532px;height: 405px;padding-top: 17px;
+	background: url("/static/img/heme-pic.png");
+	vertical-align: top;
+}
+
+.home-product-list{
+	display: inline-block;
+	padding-left: 100px;
+	vertical-align: top;
+}
+
+.product-list-cell{
+	padding: 20px 0;
+}
+
+.product-list-link{
+	display: block;
+	color: #666;
+	font-size: 0;
+	&:hover{
+		.product-icon{
+			border-color: #0084e3;
+			i{
+				color: #0084e3;
+			}
+		}
+	}
+}
+
+.product-icon,.product-summary{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+
+.product-icon{
+	width: 50px;height: 50px;line-height: 50px;
+	border-radius: 50%;border: 1px solid #ddd;
+	text-align: center;
+	i{
+		margin-top: 8px;
+		font-size: 32px;color: #ccc;
+	}
+}
+
+.product-summary{
+	padding-left: 20px;
+	font-size: 12px;
+	.title{
+		font-size: 16px;font-weight: bold;
+	}
+}
+
+
+
+// 客户列表
+
+.home-client-list{
+	padding-top: 30px;
+	font-size: 0;
+	>li{
+		display: inline-block;
+		// padding: 0 15px;
+		width: 16.6%;padding: 30px 0;
+		vertical-align: middle;
+		font-size: 14px;text-align: center;
+	}	
+}
+
+.home-partner-list{
+	padding-top: 30px;
+	font-size: 0;text-align: left;
+	>li{
+		display: inline-block;
+		// padding: 0 15px;
+		width: 14.28%;padding: 10px 0;
+		vertical-align: middle;
+		font-size: 14px;text-align: center;
+	}	
+}
+
+
+
+// 客户评价列表
+.home-feadback-list{
+	padding-top: 35px;
+	font-size: 0;
+}
+
+
+.feadback-list-item{
+	position: relative;
+	display: inline-block;
+	width: 240px;height: 385px;margin-left: 6px;
+	background-color: #f1f0f0;
+	vertical-align: middle;
+	cursor: pointer;text-align: center;font-size: 14px;
+	&.first{
+		margin-left: 0;
+	}
+	&:hover{
+		.feadback-detail{
+			height: 337px;
+		}
+	}
+}
+
+.feadback-cnt{
+	
+	height: 335px;padding: 30px 10px 45px 10px;
+}
+
+.feadback-title{
+	height: 48px;line-height: 48px;
+	background-color: #207abf;
+	color: #fff;
+}
+
+.feadback-user-info{
+	// padding-top: 10px;
+	font-size: 16px;text-align: center;
+}
+
+.user-mask{
+	margin-bottom: 10px;
+}
+
+.user-extend{
+	color: #aaa;
+}
+
+.feadback-summary{
+	padding-top: 20px;
+	text-align: left;
+}
+
+.feadback-detail{
+	position: absolute;left: 0;bottom: 0;z-index: 1;
+	height: 0;overflow: hidden;
+	transition: All 0.5s ease 0.3s;
+	.user-extend{
+		color: #fff;
+	}
+}
+
+.feadback-detail-cnt{
+	height: 377px;
+	padding: 20px 10px 45px 10px;
+	background-color: #4c92c9;
+	color: #fff;text-align: left;
+}
+
+
+
+
+// 首页体验按钮
+.gui-btn-ty{
+	width: 340px;height: 50px;line-height: 50px;
+	margin-top: 65px;
+	background-color: #2179BF;border: none;
+	color: #fff;font-size: 24px;
+}
+
+

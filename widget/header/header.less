@@ -1,0 +1,186 @@
+// ========================================
+// ============= 顶部结构 ==================
+// ========================================
+
+
+.header{
+	background: #fff;
+	color: #fff;
+}
+
+.header-container{
+	height: 72px;width: 998px;margin: 0 auto;
+}
+
+.header-left{
+	float: left;*display: inline;
+}
+.header-right{
+	float: right;*display: inline;
+}
+
+// ============ 主体logo ====================
+.main-logo{
+	display: inline-block;
+	vertical-align: middle;
+	width: 77px;height: 46px;
+	margin-top: 12px;
+	a{
+	   display: block;
+	   width: 77px;height: 46px;line-height: 46px;
+	   background: url("/static/img/logo-transparent.png") 0 0 no-repeat;
+	}
+}
+
+// ========================================
+
+// ============ 主导航 ====================
+.main-nav{
+	&:extend(.clearfix all);
+	display: inline-block;
+	// margin-left: 350px;
+	vertical-align: middle;
+	font-size: 0;
+}
+
+.main-nav-cell{
+	display: inline-block;
+	padding: 0 25px;
+	// width: 120px;
+	line-height: 72px;
+	font-size: 14px;
+}
+
+.main-nav-link{
+	display: block;
+	color: #666;
+	text-align: center;
+	&:hover{
+		color: #0082ec;
+	}
+}
+
+// ========================================
+
+// ============= 登入区域 ==================
+.login-bar{
+	position: relative;
+	// float: right;
+	display: inline-block;*display: inline;*zoom:1;
+	line-height: 71px;
+	&:hover{
+		.manager-link-list{
+			display: block;
+		}
+	}
+}
+
+.login-bar-cell{
+	display: inline-block;
+	width: 56px;height: 26px;line-height: 24px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	border: 1px solid #ddd;
+}
+
+.register-link{
+	margin-left: 10px;
+	color: #0082ec;
+	background: #fff;
+	border: 1px solid #fff;
+}
+.manager-link{
+	width: 110px;
+	height: 32px;
+	line-height: 30px;
+}
+.manager-link-list{
+	display: none;
+	position: absolute;
+	padding: 5px 0;
+	top: 53px;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	border: 1px solid #ddd;
+	z-index: 10;
+	text-align: left;
+	a{
+		display: block;
+		padding-left: 10px;
+		height: 32px;
+		line-height: 32px;
+		color: #666;
+		&:hover{
+			color: #0082ec;
+			background: #f2f2f2;
+		}
+	}
+}
+
+.user-name{
+	width: 145px;
+	text-overflow:ellipsis; 
+	white-space:nowrap; 
+	overflow:hidden; 
+}
+.bar-link{
+	width: 60px;
+}
+// ========================================
+
+// ============ 首页头部 ====================
+.hm-header{
+	position: relative;
+	background: rgba(255, 255, 255, 0);
+	background-color: transparent;
+	color: #fff;
+	z-index: 10;
+}
+.hm-main-logo{
+	display: inline-block;
+	vertical-align: middle;
+	width: 77px;height: 46px;
+	margin-top: 12px;
+	a{
+	   display: block;
+	   width: 77px;height: 46px;line-height: 46px;
+	   background: url("/static/img/logo_new.png") 0 0 no-repeat;
+	}
+}
+.hm-main-nav-link{
+	display: block;
+	color: #fff;
+	text-align: center;
+}
+.login-link{
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  border-color: rgba(255, 255,255, .5);
+  transition: all .5s ease;
+
+  &:hover{
+	border-color: #fff;
+	background-color: rgba(255, 255,255, .05);
+  }
+}
+
+.login-link-c{
+	color: #666;
+	border: 1px solid #ddd;
+}
+
+
+
+.legalize-pic{
+	display: inline-block;*display: inline;*zoom:1;
+	width: 83px;height: 20px;margin-left: 10px;margin-top: 19px;
+	background: url('/static/img/legalize-w.png') no-repeat;
+	vertical-align: middle;
+	&.blue{
+		background: url('/static/img/legalize-b.png') no-repeat;
+	}
+}

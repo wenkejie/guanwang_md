@@ -1,0 +1,54 @@
+// ========================================
+// ============= 标签结构 ==================
+// ========================================
+
+.gui-tags-area{
+	display: inline-block;
+	vertical-align: middle;
+	// font-size: 0;
+}
+
+.gui-tags-cell{
+	display: inline-block;
+	padding: 3px 7px;margin-right: 10px;
+	border: 1px solid #e9e9e9;border-radius: 4px;background-color: #f4f4f4;
+	vertical-align: middle;
+	cursor: pointer;
+	// font-size: 12px;
+	&:hover{
+		border-color: #0084e3;
+	}
+}
+
+.gui-tags-current{
+	background-color: #0084e3;border-color: #0084e3;
+	color: #fff;
+	.product-tips-icon{
+		color: #fff;
+		&:hover{
+			color: #fff;
+		}
+	}
+}
+
+.gui-tags-items{
+	// margin-bottom: 15px;
+	& + .gui-tags-items{
+		margin-top: 10px;
+	}
+}
+
+
+.gui-tags-group{
+	padding: 3px 7px;
+	border: 1px solid #e9e9e9;border-radius: 4px;background-color: #f4f4f4;
+	.gui-input{
+		width: 110px;
+	}
+	label{
+		display: inline-block;
+		width: 110px;
+		vertical-align: middle;
+		text-align: right;
+	}
+}
